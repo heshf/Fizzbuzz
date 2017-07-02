@@ -23,3 +23,10 @@ describe 'fizzbuzz' do
 		expect(15.fizzbuzz).to(eq('fizzbuzz'))
 	end
 end
+
+
+describe 'fizzbuzz' do
+	it 'returns 0 when passed 0' do
+		expect(0.fizzbuzz).to(eq(0))
+	end
+end
