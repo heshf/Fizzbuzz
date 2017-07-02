@@ -1,12 +1,8 @@
 class Integer
 
 	def fizzbuzz
-		return 0 if self == 0
-		return "fizzbuzz" if self %15==0 #using 15 to cover multiples of BOTH 3 and 5
-		return "fizz" if self %3==0
-		return "buzz" if self %5==0
-
-		self
+		#uses modulus 15 to cover multiples of BOTH 3 and 5
+		self == 0 ? 0 : self % 15 ==0 ? "fizzbuzz" : self %3==0 ? "fizz" : self % 5==0 ? "buzz" : self
 	end
 
 end
